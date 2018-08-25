@@ -28,6 +28,9 @@ ResNet benchmark by Keras(TensorFlow), Keras(MXNet), Chainer, PyTorch using Goog
 ![](images/min_test_error.png)
 ![](images/times.png)
 
+# See Details(Japanese)
+Coming soon
+
 # Settings
 Parameters are based on the paper, but differences are
 
@@ -50,3 +53,7 @@ Parameters are based on the paper, but differences are
 | Torchvision | 0.2.1   |
 
 * Experiment on Google Colab(using GPU)
+
+# Reference
+K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognition. In *CVPR*, 2016
+https://arxiv.org/abs/1512.03385
