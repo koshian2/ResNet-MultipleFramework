@@ -29,7 +29,7 @@ ResNet benchmark by Keras(TensorFlow), Keras(MXNet), Chainer, PyTorch using Goog
 ![](images/times.png)
 
 # See Details(Japanese)
-Coming soon
+https://blog.shikoan.com/resnet-multiple-framework/
 
 # Settings
 Parameters are based on the paper, but differences are
