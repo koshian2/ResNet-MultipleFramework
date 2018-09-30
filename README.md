@@ -28,8 +28,27 @@ ResNet benchmark by Keras(TensorFlow), Keras(MXNet), Chainer, PyTorch using Goog
 ![](images/min_test_error.png)
 ![](images/times.png)
 
+# TPU in Colaboratory(updated at 9/30)
+I also tried same expretiment using the free TPU of Google Colaboratory.
+
+| Framework     | N | # Layers | MinTestError | s / epoch |
+|---------------|--:|---------:|-------------:|----------:|
+| TF-Keras(TPU) | 3 |       20 |        0.154 |    19.666 |
+| TF-Keras(TPU) | 5 |       32 |        0.153 |    19.818 |
+| TF-Keras(TPU) | 7 |       44 |        0.167 |    19.969 |
+| TF-Keras(TPU) | 9 |       56 |        0.133 |    19.932 |
+
+(TensorFlow：1.11.0-rc2、Keras：2.1.6)
+
+**TPU is extremely fast!!!** TPU is at least x6 faster than GPU version of Keras, and x3.5 faster than PyTorch which was the fastest among GPU frameworks.
+
+![](images/times_tpu.png)
+
+But sadly, however, LearningRateScheduler does not work on the TPU due to a bug in TensorFlow. Therefore, accuracy is a little bit worse than the GPU.
+
 # See Details(Japanese)
-https://blog.shikoan.com/resnet-multiple-framework/
+* https://blog.shikoan.com/resnet-multiple-framework/
+* https://blog.shikoan.com/colab-tpu-resnet-benchmarks/
 
 # Settings
 Parameters are based on the paper, but differences are
