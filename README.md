@@ -38,13 +38,14 @@ I also tried same expretiment using the free TPU of Google Colaboratory.
 | TF-Keras(TPU) | 7 |       44 |        0.167 |    19.969 |
 | TF-Keras(TPU) | 9 |       56 |        0.133 |    19.932 |
 
-(TensorFlow：1.11.0-rc2、Keras：2.1.6)
+(TensorFlow：1.11.0-rc2、Keras：2.1.6)  
+Batch-size is changed to 1024
 
 **TPU is extremely fast!!!** TPU is at least x6 faster than GPU version of Keras, and x3.5 faster than PyTorch which was the fastest among GPU frameworks.
 
 ![](images/times_tpu.png)
 
-But sadly, however, LearningRateScheduler does not work on the TPU due to a bug in TensorFlow. Therefore, accuracy is a little bit worse than the GPU.
+But sadly, LearningRateScheduler does not work on the TPU due to a bug in TensorFlow. Therefore, accuracy is a little bit worse than the GPU.
 
 # See Details(Japanese)
 * https://blog.shikoan.com/resnet-multiple-framework/
